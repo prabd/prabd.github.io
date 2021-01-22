@@ -122,7 +122,8 @@
 												<h3 class="major">Log Manager <a href="https://github.com/prabd/log_manager" target="_blank" class="special" style="float: right">View</a></h3>
 												<p>A command-line interface written in C++ to manage structured logs. Curate an excerpt list of logs and search by keyword, category, or timestamp.</p>
 												<ul>
-													<li>Hello</li>
+													<li style="font-size: .9rem;">Parsed structured log file, applying std::unordered_map to cache data in memory.</li>
+													<li style="font-size: .9rem;">Optimized performance by minimizing data redundancy and leveraging counting sort for specific user commands.</li>
 												</ul>
 											</div>
 											<div>
@@ -136,6 +137,11 @@
 											<div>
 												<h3 class="major">Wikipedia Search Engine *</h3>
 												<p>A search engine for scraped Wikipedia data, serving results ranked by relevancy to user queries.</p>
+												<ul>
+													<li style="font-size: .9rem;">Developed MapReduce pipeline to create inverted index with parallelized data processing via Hadoop.</li>
+													<li style="font-size: .9rem;">Created API server that queries inverted index, computes weighted average of TF-IDF and PageRank scores, and serves relevant hits.</li>
+													<li style="font-size: .9rem;">Built front-end to display search form and results, issuing requests to API server and populating webpage details from an SQLite database.</li>
+												</ul>
 											</div>
 											<div style="position: relative;">
 												<ul style="list-style-type: none; padding-bottom: 1rem; vertical-align: bottom;">
@@ -151,6 +157,10 @@
 											<div>
 												<h3 class="major">Euchre *</h3>
 												<p>A simulator for Euchre, a popular card game played with 4 players. Run with any combination of human and bot players.</p>
+												<ul>
+													<li style="font-size: .9rem;">Leveraged polymorphism and factory design pattern to hide implementation details of each type of player.</li>
+													<li style="font-size: .9rem;">Created command-line interface to display each player's hand and allow human players to choose their move.</li>
+												</ul>
 											</div>
 											<div>
 												<ul style="list-style-type: none; padding-bottom: 1rem;">
@@ -164,6 +174,10 @@
 											<div>
 												<h3 class="major">A* Search Visualizer <a href="https://github.com/prabd/astar_pathfinder" target="_blank" class="special" style="float: right">View</a></h3>
 												<p>A visualizer for the A* (A-star) search algorithm, written with Python and Pygame. Select start and end points, as well as obstacles via a graphical interface.</p>
+												<ul>
+													<li style="font-size: .9rem;">Visually distinguishes visited, unvisited, and enqueued nodes via color.</li>
+													<li style="font-size: .9rem;">Implemented easy-to-use graphical user interface with Pygame, allowing user to modify search parameters, such as diagonal movement and obstacles.</li>
+												</ul>
 											</div>
 											<div>
 												<ul style="list-style-type: none; padding-bottom: 1rem;">
@@ -174,9 +188,11 @@
 										</article>
 									</section>
 									<p>* Source code available upon request.</p>
+									<!--
 									<ul class="actions">
 										<li><a href="projects.html" class="button">View More</a></li>
 									</ul>
+									-->
 								</div>
 							</section>
 
@@ -198,6 +214,7 @@
 										<li><img height="40sp" src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /></li>
 										<li><img height="40sp" src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white" /></li>
 										<li><img height="40sp" src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" /></li>
+										<li><img height="40sp" src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" /></li>
 										<li><img height="40sp" src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" /></li>
 										<li><img height="40sp" src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white" /></li>
 										<li><img height="40sp" src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" /></li>
