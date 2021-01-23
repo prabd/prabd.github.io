@@ -6,7 +6,18 @@
 -->
 <html>
 	<head>
-		<title>Generic - Solid State by HTML5 UP</title>
+		<title>Projects</title>
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+		<link rel="manifest" href="/favicon/site.webmanifest">
+		<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="/favicon/favicon.ico">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,7 +30,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1><a href="index.html">Solid State</a></h1>
+						<h1><a href="index.html">Prab Dhaliwal</a></h1>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -41,38 +52,168 @@
 					<section id="wrapper">
 						<header>
 							<div class="inner">
-								<h2>Generic</h2>
-								<p>Phasellus non pulvinar erat. Fusce tincidunt nisl eget ipsum.</p>
+								<h2>Project Experience</h2>
+								<!-- <p>A gallery of my projects</p> -->
 							</div>
 						</header>
 
 						<!-- Content -->
-							<div class="wrapper">
+							<div class="wrapper style4">
 								<div class="inner">
-
-									<h3 class="major">Lorem ipsum dolor</h3>
-									<p>Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. Curabitur purus leo donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo. Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci fringilla tincidunt. Aliquam eleifend ligula non velit accumsan cursus. Etiam ut gravida sapien.</p>
-
-									<p>Vestibulum ultrices risus velit, sit amet blandit massa auctor sit amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis id vel diam. Praesent sit amet posuere risus, eu faucibus lectus. Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam. Proin nec commodo, vel scelerisque nisi scelerisque. Suspendisse id quam vel tortor tincidunt suscipit. Nullam auctor orci eu dolor consectetur, interdum ullamcorper ante tincidunt. Mauris felis nec felis elementum varius.</p>
-
-									<h3 class="major">Vitae phasellus</h3>
-									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+									<h3 class="major">My Projects</h3>
+									<p>A selection of my side projects and technical explorations.</p>
 
 									<section class="features">
-										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3 class="major">Sed feugiat lorem</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
+										<article style="flex-direction: column; justify-content: space-between; display: flex;">
+											<!-- <a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a> -->
+											<div>
+												<h3 class="major">Log Manager <a href="https://github.com/prabd/log_manager" target="_blank" class="special" style="float: right">View</a></h3>
+												<p>A command-line interface written in C++ to manage structured logs. Curate an excerpt list of logs and search by keyword, category, or timestamp.</p>
+												<ul>
+													<li style="font-size: .9rem;">Parsed structured log file, applying std::unordered_map to cache data in memory.</li>
+													<li style="font-size: .9rem;">Optimized performance by minimizing data redundancy and leveraging counting sort for specific user commands.</li>
+												</ul>
+											</div>
+											<div>
+												<ul style="list-style-type: none; padding-bottom: 1rem;">
+													<li style="float: right;"><img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" /></li>
+												</ul>
+											</div>
 										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3 class="major">Nisl placerat</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
+										<article style="flex-direction: column; justify-content: space-between; display: flex;">
+											<!-- <a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a> -->
+											<div>
+												<h3 class="major">Wikipedia Search Engine *</h3>
+												<p>A search engine for scraped Wikipedia data, serving results ranked by relevancy to user queries.</p>
+												<ul>
+													<li style="font-size: .9rem;">Developed MapReduce pipeline to create inverted index with parallelized data processing via Hadoop.</li>
+													<li style="font-size: .9rem;">Created API server that queries inverted index, computes weighted average of TF-IDF and PageRank scores, and serves relevant hits.</li>
+													<li style="font-size: .9rem;">Built front-end to display search form and results, issuing requests to API server and populating webpage details from an SQLite database.</li>
+												</ul>
+											</div>
+											<div style="position: relative;">
+												<ul style="list-style-type: none; padding-bottom: 1rem; vertical-align: bottom;">
+													<li style="float: right;"><img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" /></li>
+													<li style="float: right;"><img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white" /></li>
+													<li style="float: right;"><img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white" /></li>
+												</ul>
+											</div>
+											<!-- <a href="#" class="special">Learn more</a> -->
+										</article>
+										<article style="flex-direction: column; justify-content: space-between; display: flex;">
+											<!-- <a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a> -->
+											<div>
+												<h3 class="major">A* Search Visualizer <a href="https://github.com/prabd/astar_pathfinder" target="_blank" class="special" style="float: right">View</a></h3>
+												<p>A visualizer for the A* (A-star) search algorithm, written with Python and Pygame. Select start and end points, as well as obstacles via a graphical interface.</p>
+												<ul>
+													<li style="font-size: .9rem;">Visually distinguishes visited, unvisited, and enqueued nodes via color.</li>
+													<li style="font-size: .9rem;">Implemented easy-to-use graphical user interface with Pygame, allowing user to modify search parameters, such as diagonal movement and obstacles.</li>
+												</ul>
+											</div>
+											<div>
+												<ul style="list-style-type: none; padding-bottom: 1rem;">
+													<li style="float: right;"><img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white" /></li>
+												</ul>
+											</div>
+											<!-- <a href="#" class="special">Learn more</a> -->
+										</article>
+										<article style="flex-direction: column; justify-content: space-between; display: flex;">
+											<!-- <a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a> -->
+											<div>
+												<h3 class="major">Treasure Hunt <a href="https://github.com/prabd/treasure_hunt" target="_blank" class="special" style="float: right">View</a></h3>
+												<p>A pathfinding program that finds treasure in a given map provided as input. Uses a combination of BFS and DFS on different terrains.</p>
+												<ul>
+													<li style="font-size: .9rem;">Parses input into memory, then uses BFS or DFS (depending on terrain) to begin search from start point.</li>
+													<li style="font-size: .9rem;">Displays path to treasure, if possible, and provides statistics on algorithm termination.</li>
+													<li style="font-size: .9rem;">Allows customization of search behavior via command-line arguments.</li>
+												</ul>
+											</div>
+											<div>
+												<ul style="list-style-type: none; padding-bottom: 1rem;">
+													<li style="float: right;"><img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" /></li>
+												</ul>
+											</div>
+											<!-- <a href="#" class="special">Learn more</a> -->
 										</article>
 									</section>
+									<p>* Source code available upon request.</p>
+								</div>
+							</div>
+							<div class="wrapper alt style1">
+								<div class="inner">
+									<h3 class="major">Course Projects</h3>
+									<p>A selection of the projects I've completed as a part of my coursework.</p>
 
+									<section class="features">
+										<article style="flex-direction: column; justify-content: space-between; display: flex;">
+											<!-- <a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a> -->
+											<div>
+												<h3 class="major">Instagram Clone *</h3>
+												<p>A website that allows users to make posts, comment, and follow others, similar to Instagram. Includes authentication to keep accounts secure.</p>
+												<ul>
+													<li style="font-size: .9rem;">Created REST API to handle user actions such as liking, commenting, posting, etc.</li>
+													<li style="font-size: .9rem;">Implemented front-end with React, providing a responsive experience and querying API server for post feeds and user actions.</li>
+												</ul>
+											</div>
+											<div>
+												<ul style="list-style-type: none; padding-bottom: 1rem;">
+													<li style="float: right;"><img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" /></li>
+													<li style="float: right;"><img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white" /></li>
+													<li style="float: right;"><img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white" /></li>
+													<li style="float: right;"><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /></li>
+												</ul>
+											</div>
+										</article>
+										<article style="flex-direction: column; justify-content: space-between; display: flex;">
+											<!-- <a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a> -->
+											<div>
+												<h3 class="major">Euchre *</h3>
+												<p>A simulator for Euchre, a popular card game played with 4 players. Run with any combination of human and bot players.</p>
+												<ul>
+													<li style="font-size: .9rem;">Leveraged polymorphism and factory design pattern to hide implementation details of each type of player.</li>
+													<li style="font-size: .9rem;">Created command-line interface to display each player's hand and allow human players to choose their move.</li>
+												</ul>
+											</div>
+											<div>
+												<ul style="list-style-type: none; padding-bottom: 1rem;">
+													<li style="float: right;"><img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" /></li>
+												</ul>
+											</div>
+											<!-- <a href="#" class="special">Learn more</a> -->
+										</article>
+										<article style="flex-direction: column; justify-content: space-between; display: flex;">
+											<!-- <a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a> -->
+											<div>
+												<h3 class="major">LC-2K Assembler & Linker *</h3>
+												<p>An assembler and linker implementation for the Little Computer 2000 instruction set architecure.</p>
+												<ul>
+													<li style="font-size: .9rem;">Implemented support for global/local labels and multifile assembly.</li>
+												</ul>
+											</div>
+											<div>
+												<ul style="list-style-type: none; padding-bottom: 1rem;">
+													<li style="float: right;"><img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" /></li>
+												</ul>
+											</div>
+										</article>
+										<article style="flex-direction: column; justify-content: space-between; display: flex;">
+											<!-- <a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a> -->
+											<div>
+												<h3 class="major">LC-2K Pipelined Processor *</h3>
+												<p>A pipelined processor simulator for the Little Computer 2000 instruction set architecture.</p>
+												<ul>
+													<li style="font-size: .9rem;">Created simulator for pipelined execution of the LC-2K ISA.</li>
+													<li style="font-size: .9rem;">Displays execution state on command-line, showing instruction at each stage and corresponding register values.</li>
+												</ul>
+											</div>
+											<div>
+												<ul style="list-style-type: none; padding-bottom: 1rem;">
+													<li style="float: right;"><img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" /></li>
+												</ul>
+											</div>
+										</article>
+									</section>
+									<p>* Source code available upon request.</p>
 								</div>
 							</div>
 
@@ -81,41 +222,8 @@
 				<!-- Footer -->
 					<section id="footer">
 						<div class="inner">
-							<h2 class="major">Get in touch</h2>
-							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-							<ul class="contact">
-								<li class="icon solid fa-home">
-									Untitled Inc<br />
-									1234 Somewhere Road Suite #2894<br />
-									Nashville, TN 00000-0000
-								</li>
-								<li class="icon solid fa-phone">(000) 000-0000</li>
-								<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-								<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
-							</ul>
 							<ul class="copyright">
-								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; Prabdeep Dhaliwal. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
 					</section>
